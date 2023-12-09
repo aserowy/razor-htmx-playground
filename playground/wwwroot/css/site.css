@@ -1,22 +1,25 @@
-html {
-  font-size: 14px;
+:root {
+  --spacing-company: 3rem;
+  --font-weight: 400;
+  --border-radius: 0;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+header {
+  padding: var(--spacing-company) 0;
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+header hgroup > :last-child {
+  color: var(--h3-color);
+  font-weight: 200;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+header hgroup {
+  margin-bottom: var(--spacing-company);
 }
 
-body {
-  margin-bottom: 60px;
+.hero {
+  background-color: #394046;
+  background-image: url("/img/sascha-eremin-DNQ-M93tHmA-unsplash-3000x1000.jpg");
+  background-position: center;
+  background-size: cover;
 }
