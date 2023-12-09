@@ -15,14 +15,17 @@
       <nav class="container-fluid">
         <ul>
           <li>
-            <a class="contrast" href="@Url.Page("Index")">
+            <a class="contrast" asp-page="/Index">
               <strong>Home</strong>
             </a>
           </li>
         </ul>
         <ul>
           <li>
-            <a class="contrast" href="@Url.Page("Privacy")">Privacy</a>
+            <a class="contrast" asp-page="/Tasks/Index">Tasks</a>
+          </li>
+          <li>
+            <a class="contrast" asp-page="/Privacy">Privacy</a>
           </li>
         </ul>
       </nav>
