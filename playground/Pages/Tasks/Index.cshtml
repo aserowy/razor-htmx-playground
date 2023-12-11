@@ -1,3 +1,8 @@
 ﻿@page
 @model playground.Pages.Tasks.IndexModel
-@{ }
+
+@foreach (var task in Model.Tasks)
+{
+    @await Html.PartialAsync("_Task", task)
+}
+

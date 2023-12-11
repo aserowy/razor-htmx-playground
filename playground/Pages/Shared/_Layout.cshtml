@@ -11,21 +11,21 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
   </head>
   <body>
-    <div class="hero" data-theme="dark">
+    <div class="hero" data-theme="dark" hx-boost="true">
       <nav class="container-fluid">
         <ul>
           <li>
-            <a class="contrast" asp-page="/Index">
+            <a class="contrast" href="/">
               <strong>Home</strong>
             </a>
           </li>
         </ul>
         <ul>
           <li>
-            <a class="contrast" asp-page="/Tasks/Index">Tasks</a>
+            <a class="contrast" href="/tasks">Tasks</a>
           </li>
           <li>
-            <a class="contrast" asp-page="/Privacy">Privacy</a>
+            <a class="contrast" href="/privacy">Privacy</a>
           </li>
         </ul>
       </nav>
@@ -38,8 +38,6 @@
     </div>
 
     <main class="container">@RenderBody()</main>
-
-    <script src="~/js/site.js" asp-append-version="true"></script>
 
     <script
       src="https://unpkg.com/htmx.org@1.9.8"
